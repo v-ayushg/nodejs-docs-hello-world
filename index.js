@@ -5,7 +5,7 @@
 
 const express = require('express');
 const bodyParser = require('body-parser');
-// const cors = require('cors')
+const cors = require('cors')
 const crypto = require('crypto');
 const pkg = require('./package.json');
 
