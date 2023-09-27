@@ -5,8 +5,15 @@ name: Build and deploy Node.js app to Azure Web App - nodegithub
 
 on:
   push:
+      # Sequence of patterns matched against refs/heads
     branches:
       - main
+      - 'mona/octocat'
+      - 'releases/**'
+    # Sequence of patterns matched against refs/tags
+    tags:
+      - v2
+      - v1.*
   workflow_dispatch:
 
 jobs:
