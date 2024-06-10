@@ -60,6 +60,9 @@ app.get('/', function (req, res) {
 
 app.get('/api', function (req, res) {
     return res.send("Fabrikam Bank API");
+
+app.get('/about', function (req, res) {
+    return res.send("I am about");
 })
   
 // ----------------------------------------------
